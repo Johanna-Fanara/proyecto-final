@@ -1,0 +1,484 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header .img {
+  width: 100%;
+  height: 500px;
+  background-image: url("../assets/img/Libro-abierto-iluminado-9009d71f.png");
+  background-position: center;
+  background-size: cover; }
+  header .img h1 {
+    color: black;
+    font-size: 250px;
+    font-weight: bolder;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    text-align: center;
+    position: absolute;
+    left: 15%; }
+
+header .navBar {
+  background-color: #06d17d;
+  list-style: none;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: right;
+  display: flex;
+  justify-content: center;
+  gap: 40px; }
+  header .navBar a {
+    text-decoration: none;
+    color: black; }
+  header .navBar .subrayado {
+    text-decoration: underline;
+    text-decoration-thickness: 6px;
+    color: black; }
+  header .navBar .carrito {
+    background-color: #06d17d;
+    display: flex;
+    justify-content: end;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 30px; }
+    header .navBar .carrito:hover {
+      transform: scale(1.2); }
+
+main {
+  background-color: #9eeed3; }
+  main .h2 {
+    color: #09d457;
+    font-size: 80px;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    margin-top: 40px; }
+  main .h3 {
+    color: #016644;
+    font-size: 70px;
+    font-weight: bold;
+    text-decoration: wavy;
+    font-family: "Lobster", cursive;
+    text-align: center; }
+  main .section-one .h4 {
+    color: black;
+    font-size: 50px;
+    font-weight: lighter;
+    font-style: normal;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 80px; }
+  main .section-one p {
+    color: black;
+    font-size: 25px;
+    font-style: italic;
+    margin-left: 5px; }
+  main .section-one .section-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    font-size: 20; }
+    main .section-one .section-card .card {
+      border: 3px;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-left: 20px;
+      margin-bottom: 30px;
+      margin-right: 40px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap; }
+      main .section-one .section-card .card .img-libros {
+        width: 200px;
+        height: 300px; }
+      main .section-one .section-card .card .carrito2 {
+        display: flex;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        margin-left: 160px;
+        margin-bottom: 10px; }
+        main .section-one .section-card .card .carrito2:hover {
+          transform: scale(1.3); }
+      main .section-one .section-card .card h6 {
+        color: black;
+        font-size: 25px;
+        font-weight: bolder;
+        font-style: normal;
+        text-align: center; }
+  main .section-one .h5 {
+    color: black;
+    font-size: 50px;
+    font-weight: lighter;
+    font-style: normal;
+    text-align: center;
+    text-transform: capitalize; }
+
+.serch {
+  color: black;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  margin-bottom: 40px;
+  margin-top: 50px; }
+  .serch .buscar {
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center; }
+
+/*NOSOTROS*/
+.grids {
+  display: grid;
+  padding: 4rem;
+  width: 100%;
+  height: 1000px;
+  gap: 4rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "item1 item1" "item1 item1 " "...   item3 " "item2  item5 " "item4   .... "; }
+  .grids .item1 {
+    grid-area: item1;
+    text-align: center;
+    color: #f5f1f1;
+    font-size: 50px;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    background-image: url(../assets/img/Las-bibliotecas-publicas-no-paran-de-evolucionar-para-ofrecer-un-mejor-servicio-basado-en-la-necesidad-y-en-la-utilidad.jpg);
+    width: 100%;
+    height: 130px;
+    margin-left: 0px; }
+  .grids .item2, .grids .item5 {
+    grid-area: item2;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: dotted;
+    font-weight: lighter; }
+  .grids .item3, .grids .item4 {
+    grid-area: item3;
+    font-size: 30px;
+    text-align: center;
+    text-indent: 10px; }
+  .grids .item4 {
+    grid-area: item4; }
+  .grids .item5 {
+    grid-area: item5; }
+
+/* CONTACTO*/
+.card-datos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 50px; }
+  .card-datos legend {
+    font-size: 40px;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+    text-decoration: underline; }
+  .card-datos .labe-nombre {
+    font-size: 30px;
+    text-align: justify;
+    text-transform: capitalize;
+    margin-top: 30px; }
+  .card-datos .label-mail {
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 40px; }
+  .card-datos .label-msj {
+    font-size: 30px;
+    font-style: normal;
+    color: black;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 40px; }
+
+.div-acepta {
+  font-size: 15px;
+  font-style: normal;
+  color: black;
+  text-align: center;
+  text-transform: capitalize; }
+
+.in-enviar {
+  font-size: 15px;
+  font-style: normal;
+  color: black;
+  text-transform: capitalize;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.h4 {
+  font-size: 25px;
+  font-style: normal;
+  color: black;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 80px;
+  margin-bottom: 40px; }
+
+.card-contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  font-size: 30px; }
+  .card-contacto .inst, .card-contacto .face, .card-contacto .wpp {
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    height: 80px; }
+
+/* FOOTER*/
+footer p {
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  margin-top: 80px; }
+
+footer .redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px; }
+  footer .redes .redes-img {
+    width: 40px;
+    height: 40px; }
+
+/* TABLET*/
+@media (max-width: 768px) {
+  header .img {
+    width: 100%;
+    height: 250px; }
+    header .img h1 {
+      font-size: 80px;
+      margin-top: 50px;
+      left: 30%; }
+  header .navBar {
+    font-size: 30px;
+    gap: 30px; }
+    header .navBar .subrayado {
+      text-decoration-thickness: 3px; }
+    header .navBar .carrito {
+      height: 30px; }
+  /* MAIN DE TABLET*/
+  main .h2 {
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 5px; }
+  main .h3 {
+    font-size: 60px; }
+  main .section-one {
+    font-size: 20px; }
+    main .section-one .h4 {
+      margin-top: 50px;
+      font-size: 50px; }
+    main .section-one p {
+      color: black;
+      font-size: 20px;
+      font-style: italic;
+      margin-left: 5px; }
+    main .section-one .section-card {
+      margin-left: 5px; }
+      main .section-one .section-card .card {
+        margin-left: 10px;
+        margin-right: 10px; }
+        main .section-one .section-card .card .img-libros {
+          width: 200px;
+          height: 300px;
+          width: 200px;
+          height: 300px; }
+        main .section-one .section-card .card .h6 {
+          font-size: 20px; }
+        main .section-one .section-card .card .carrito2 {
+          width: 20px;
+          justify-content: left;
+          margin-left: 150px; }
+    main .section-one .h5 {
+      margin-top: 50px;
+      font-size: 50px; }
+  .serch {
+    height: 40px;
+    margin-bottom: 40px;
+    margin-top: 40px; }
+    .serch .buscar {
+      font-size: 30px; }
+  /* NOSOTROS TABLET*/
+  .grids {
+    height: 800px;
+    gap: 3rem;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "item1 item1" "...   item3 " "item2  item5 " "item4   .... "; }
+    .grids .item1 {
+      font-size: 30px;
+      height: 100px; }
+    .grids .item2, .grids .item5 {
+      font-size: 25px;
+      font-weight: bolder; }
+    .grids .item3, .grids .item4 {
+      font-size: 20px; }
+    .grids .item4 {
+      font-size: 20px; }
+    .grids .item5 {
+      font-size: 25px;
+      font-weight: bolder; }
+  /* CONTACTO*/
+  .card-datos legend {
+    font-size: 30px; }
+  .card-datos .labe-nombre {
+    margin-top: 5px;
+    font-size: 25px; }
+  .card-datos .label-mail {
+    margin-top: 5px;
+    font-size: 25px;
+    margin-left: 150px; }
+  .card-datos .label-msj {
+    margin-top: 20px; }
+  .in-enviar {
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  .h4 {
+    margin-top: 40px;
+    margin-bottom: 20px; }
+  .card-contacto {
+    font-size: 20px; }
+    .card-contacto .inst, .card-contacto .face, .card-contacto .wpp {
+      width: 60px;
+      height: 50px; }
+    .card-contacto .face {
+      width: 60px;
+      height: 50px; }
+    .card-contacto .wpp {
+      width: 60px;
+      height: 50px; }
+  /* FOOTER DE TABLET*/
+  footer p {
+    font-size: 15px;
+    margin-top: 10px; }
+  footer .redes {
+    margin-top: 5px; }
+    footer .redes .redes-img {
+      width: 30px;
+      height: 30px; } }
+
+/*CELULAR*/
+@media (max-width: 480px) {
+  /* HEADER CELULAR*/
+  header {
+    background-color: #06d17d; }
+    header .img {
+      height: 150px; }
+      header .img h1 {
+        font-size: 50px;
+        margin-top: 20px; }
+    header .navBar {
+      font-size: 20px;
+      gap: 15px; }
+      header .navBar .subrayado {
+        text-decoration-thickness: 2px; }
+      header .navBar .carrito {
+        margin-right: 10px;
+        margin-bottom: 5px;
+        height: 20px; }
+  /* MAIN DE CELULAR*/
+  main .h2 {
+    font-size: 40px;
+    margin-top: 5px; }
+  main .h3 {
+    font-size: 35px; }
+  main .section-one {
+    font-size: 15px; }
+    main .section-one .h4 {
+      font-size: 40px; }
+    main .section-one p {
+      font-size: 15px; }
+    main .section-one .section-card {
+      margin-left: 10px; }
+      main .section-one .section-card .card {
+        margin-left: 15px; }
+        main .section-one .section-card .card .img-libros {
+          width: 150px;
+          height: 200px; }
+        main .section-one .section-card .card .h6 {
+          font-size: 15px; }
+        main .section-one .section-card .card .carrito2 {
+          margin-left: 90px; }
+    main .section-one .h5 {
+      font-size: 40px; }
+  .serch {
+    height: 25px;
+    margin-top: 20px; }
+    .serch .buscar {
+      font-size: 20px; }
+  /* NOSOTROS CELULAR*/
+  .grids {
+    height: 700px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "item1" "item3" "item2" "item5" "item4"; }
+    .grids .item1 {
+      font-size: 20px;
+      height: 80px; }
+    .grids .item2, .grids .item5 {
+      font-size: 20px;
+      color: #21700e;
+      font-weight: bolder; }
+    .grids .item5 {
+      font-size: 20px;
+      color: #21700e;
+      font-weight: bolder; }
+  /* CONTACTO CELULAR*/
+  .card-datos {
+    flex-direction: column;
+    font-size: 20px;
+    margin-top: 10px; }
+    .card-datos legend {
+      font-size: 20px; }
+    .card-datos .labe-nombre {
+      margin-top: 5px;
+      font-size: 20px; }
+    .card-datos .label-mail {
+      margin-top: 10px;
+      font-size: 20px;
+      margin-left: 150px; }
+    .card-datos .label-msj {
+      margin-top: 15px;
+      font-size: 25px; }
+  .div-acepta {
+    font-size: 10px; }
+  .h4 {
+    margin-top: 30px;
+    font-size: 20px; }
+  .card-contacto {
+    font-size: 15px; }
+    .card-contacto .inst, .card-contacto .face, .card-contacto .wpp {
+      width: 50px;
+      height: 40px; }
+    .card-contacto .face {
+      width: 50px;
+      height: 40px; }
+    .card-contacto .wpp {
+      width: 50px;
+      height: 40px; }
+  /* FOOTER DE CELULAR*/
+  footer p {
+    font-size: 20px;
+    margin-top: 25px; }
+  footer .redes .redes-img {
+    width: 25px;
+    height: 25px; } }

@@ -1,0 +1,50 @@
+header{
+    .img{
+        @include tamano(100%,500px);
+        background-image: url("../assets/img/Libro-abierto-iluminado-9009d71f.png");
+        background-position: center;
+        background-size:cover;
+
+        h1{
+            color: rgb(0, 0, 0);
+            font-size: 250px;
+            font-weight: bolder;
+            font-family:$letra-titulo;
+            text-align: center;
+            position:absolute;
+            left:15%
+        } 
+    }
+    .navBar{
+        background-color: $color-nav;
+        list-style: none;
+        font-size: 60px;
+        font-weight: bold;
+        font-family: $letra-nav;
+        text-align: right;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .subrayado{
+            text-decoration: underline;
+            text-decoration-thickness: 6px;
+            color: black;
+        }
+
+        .carrito{
+            background-color: $color-nav;
+            display: flex;
+            justify-content: end;
+            height: 40px;
+            margin-top: 10px;
+            margin-bottom: 30px; 
+           &:hover{
+                transform: scale(1.2); 
+            }
+        }
+    }
+}

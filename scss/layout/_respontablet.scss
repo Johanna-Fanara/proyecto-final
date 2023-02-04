@@ -1,0 +1,160 @@
+@media (max-width:768px){
+   header{
+    .img{
+        @include tamano(100%,250px);
+        h1{
+            font-size: 80px;
+            margin-top: 50px;
+            left: 30%;  
+        }
+    }
+    .navBar{
+        font-size: 30px;
+        gap: 30px;  
+        .subrayado{
+            text-decoration-thickness: 3px;
+        }
+        .carrito{
+            height: 30px;
+        }
+    }
+   } 
+
+   /* MAIN DE TABLET*/
+   main{
+    .h2{
+        font-size: 60px;
+        margin-top: 20px;
+        margin-bottom: 5px; 
+    }
+    .h3{
+        font-size: 60px;  
+    }
+    .section-one{
+        font-size: 20px;
+        .h4{
+            margin-top: 50px;
+            font-size: 50px;  
+        } 
+        p{
+            color: $color-letra-princip;
+            font-size: 20px;
+            font-style: italic; 
+            margin-left: 5px; 
+        }
+        .section-card{
+            margin-left: 5px;
+            .card{
+                margin-left: 10px;
+                margin-right: 10px; 
+                .img-libros{
+                    @include tamano(200px,300px);
+                    width: 200px;
+                    height: 300px;
+                }
+                .h6{
+                    font-size: 20px; 
+                }
+               .carrito2{
+                width: 20px;
+                justify-content: left;
+                margin-left: 150px;
+               }
+            }
+        }
+        .h5{
+            margin-top: 50px;
+            font-size: 50px;  
+        }
+    }
+   }
+   .serch{
+    height: 40px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    .buscar{
+        font-size: 30px; 
+    }
+   }
+   /* NOSOTROS TABLET*/
+   .grids{
+    height: 800px;
+    gap: 3rem;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+   grid-template-areas: 
+   "item1 item1"
+   "...   item3 "
+   "item2  item5 "
+   "item4   .... ";
+   .item1{
+    font-size: 30px;
+    height: 100px;
+   }
+   .item2{
+    font-size: 25px;
+    font-weight: bolder;
+   }
+   .item3{
+    font-size: 20px;
+   }
+   .item4{
+    font-size: 20px;
+   }
+   .item5{
+    font-size: 25px;
+    font-weight: bolder;
+   }
+   }
+
+   /* CONTACTO*/
+   .card-datos{
+     legend{
+        font-size: 30px;
+     }
+     .labe-nombre{
+        margin-top: 5px;
+        font-size: 25px;
+     }
+     .label-mail{
+        margin-top: 5px;
+        font-size: 25px;
+        margin-left: 150px;
+     }
+     .label-msj{
+        margin-top: 20px;
+     }
+   }
+   .in-enviar{
+    margin-top: 5px;
+    margin-bottom: 5px;
+   }
+   .h4{
+    margin-top: 40px;
+    margin-bottom: 20px;
+   }
+   .card-contacto{
+    font-size: 20px;
+    .inst{
+        @include tamano(60px,50px);
+    }
+    .face{
+        @include tamano(60px,50px);
+    }
+    .wpp{
+        @include tamano(60px,50px);
+    }
+   }
+   /* FOOTER DE TABLET*/
+   footer{
+    p{
+        font-size: 15px;
+        margin-top: 10px;   
+    }
+    .redes{
+        margin-top: 5px;
+        .redes-img{
+            @include tamano(30px,30px);
+        } 
+    }
+   }
+}

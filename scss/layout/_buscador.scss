@@ -1,0 +1,16 @@
+
+.serch{
+    color: black;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    .buscar{
+    color: $color-letra-princip;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    }
+  }

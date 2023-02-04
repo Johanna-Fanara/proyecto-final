@@ -1,0 +1,12 @@
+@import "./utilities/variables";
+@import "./utilities/mixins";
+@import "./base/reset";
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/buscador";
+/*NOSOTROS*/@import "./layout/nosotros";
+/* CONTACTO*/@import "./layout/contacto";
+/* FOOTER*/ @import "./layout/footer"; 
+/* TABLET*/@import "./layout/respontablet"; 
+/*CELULAR*/@import "./layout/celular"; 
+

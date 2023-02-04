@@ -1,0 +1,10 @@
+@mixin flex($uno, $dos, $tres){
+    display: flex;
+    flex-direction: $uno;
+    justify-content: $dos;
+    align-items: $tres;
+}
+@mixin tamano($ancho, $altura){
+    width: $ancho;
+    height: $altura;
+}

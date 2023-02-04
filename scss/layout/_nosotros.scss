@@ -1,0 +1,48 @@
+.grids{
+    display: grid;
+    padding: 4rem;
+    @include tamano(100%,1000px);
+    gap: 4rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "item1 item1"
+    "item1 item1 "
+    "...   item3 "
+    "item2  item5 "
+    "item4   .... ";
+
+    .item1{
+        grid-area: item1;
+        text-align: center;
+        color: rgb(245, 241, 241);
+        font-size: 50px;
+        font-family: 'Lobster', cursive;
+        font-weight: bold;
+        background-image: url(../assets/img/Las-bibliotecas-publicas-no-paran-de-evolucionar-para-ofrecer-un-mejor-servicio-basado-en-la-necesidad-y-en-la-utilidad.jpg);
+        @include tamano(100%,130px);
+       margin-left: 0px; 
+    }
+    .item2{
+        grid-area: item2;
+        font-size: 40px;
+         font-weight: bold;
+         text-align: center;
+        text-decoration: dotted;
+        font-weight: lighter; 
+    }
+    .item3{
+        grid-area: item3;
+        font-size: 30px;
+        text-align: center;
+        text-indent: 10px;
+    }
+    .item4{
+        grid-area: item4;
+        @extend .item3;
+    }
+    .item5{
+        @extend .item2;
+        grid-area: item5; 
+    }
+}

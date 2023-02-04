@@ -1,0 +1,149 @@
+@media (max-width:480px){
+    /* HEADER CELULAR*/
+    header{
+        background-color: $color-nav;  
+        .img{
+            height: 150px;
+            h1{
+                font-size: 50px;
+                margin-top: 20px;  
+            }
+        }
+        .navBar{
+            font-size: 20px;
+            gap: 15px;  
+            .subrayado{
+                text-decoration-thickness: 2px;
+            }
+            .carrito{
+                margin-right: 10px;
+                margin-bottom: 5px;
+                height: 20px;
+            }
+        }
+       } 
+      /* MAIN DE CELULAR*/
+      main{
+        .h2{
+            font-size: 40px;
+            margin-top: 5px;
+        }
+        .h3{
+            font-size: 35px;  
+        }
+        .section-one{
+            font-size: 15px;
+            .h4{
+                font-size: 40px;  
+            } 
+            p{
+                font-size: 15px;
+            }
+            .section-card{
+                margin-left: 10px;
+                .card{
+                    margin-left: 15px;
+                    .img-libros{
+                        width: 150px;
+                        height: 200px;
+                    }
+                    .h6{
+                        font-size: 15px; 
+                    }
+                   .carrito2{
+                    margin-left: 90px;
+                   }
+                }
+            }
+            .h5{
+                font-size: 40px;  
+            }
+        }
+       }
+       .serch{
+        height: 25px;
+        margin-top: 20px;
+        .buscar{
+            font-size: 20px; 
+        }
+       }
+       /* NOSOTROS CELULAR*/
+   .grids{
+    height: 700px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+   grid-template-areas: 
+   "item1"
+   "item3"
+   "item2"
+   "item5"
+   "item4";
+   .item1{
+    font-size: 20px;
+    height: 80px;
+   }
+   .item2{
+    font-size: 20px;
+    color: #21700e;
+    font-weight: bolder;
+   }
+   .item5{
+    font-size: 20px;
+    color: #21700e;
+    font-weight: bolder;
+   }
+   }
+   /* CONTACTO CELULAR*/
+   .card-datos{
+    flex-direction: column;
+    font-size: 20px;
+    margin-top: 10px;
+    legend{
+       font-size: 20px;
+    }
+    .labe-nombre{
+       margin-top: 5px;
+       font-size: 20px;
+    }
+    .label-mail{
+       margin-top: 10px;
+       font-size: 20px;
+       margin-left: 150px;
+    }
+    .label-msj{
+       margin-top: 15px;
+       font-size: 25px;
+    }
+  }
+  .div-acepta{
+    font-size: 10px;
+  }
+  .h4{
+   margin-top: 30px;
+   font-size: 20px;
+  }
+  .card-contacto{
+   font-size: 15px;
+   .inst{
+    @include tamano(50px,40px);
+   }
+   .face{
+    @include tamano(50px,40px);
+   }
+   .wpp{
+    @include tamano(50px,40px);
+   }
+  }
+   /* FOOTER DE CELULAR*/
+   footer{
+    p{
+        font-size: 20px;
+        margin-top: 25px;   
+    }
+    .redes{
+        .redes-img{
+            @include tamano(25px,25px);
+        } 
+    }
+   }
+}       
